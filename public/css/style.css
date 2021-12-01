@@ -1,0 +1,58 @@
+.cuerpo {
+    background-color: violet;
+}
+
+.contenedorA {
+    max-width: 80%;
+}
+
+.contenedorB {
+    max-width: 50%;
+}
+
+.contenedorA,
+.contenedorB {
+    border: dashed black 5px;
+    padding: 15px;
+    background-color: pink;
+}
+
+@media (min-width:576px) {
+    .contenedorA,
+    .contenedorB{
+        max-width: 70%;
+        background-color: yellowgreen;
+        margin: auto;
+    }
+}
+
+@media (min-width:992px){
+    .contenedorA,
+    .contenedorB{
+        border: 10px;
+    }
+}
+
+@media (min-width:768px){
+    .contenedorA{
+        background-color: lightgrey;
+    }
+    .contenedorB{
+        background-color: lightblue;
+    }
+    .cuerpo{
+        background-color:none;
+    }
+}
+
+@media (min-width=1200px){
+    .contenedorA,
+    .contenedorB{
+        max-width: 1100px;
+    }
+}
+/*
+Ahora es tu turno. Dentro de un proyecto de Express con un documento HTML y CSS vinculados, generá un contenedor que
+ tenga las siguientes características: un ancho de 80%, 15 píxeles de relleno, 5 píxeles de borde y
+  cualquier contenido de texto. El mismo no deberá superar el 80% de ancho asignado. Cuando hayas implementado lo anterior,
+ y visualizado su comportamiento dentro del navegador, volvé para seguir avanzando.
